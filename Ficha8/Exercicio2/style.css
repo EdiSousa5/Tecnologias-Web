@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "Inter";
+}
+
+.section {
+    padding: 80px;
+}
+
+.grid {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 60px;
+    grid-template-columns: auto auto auto;
+    justify-content: left;
+}
+
+.grid-cartao > img {
+    width: 295px;
+    border-radius: 20px;
+}
+
+.image:hover ~ .price {
+    color: #3563E9;
+}
+
+.grid-cartao > .name {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.grid-cartao > .price {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+}
