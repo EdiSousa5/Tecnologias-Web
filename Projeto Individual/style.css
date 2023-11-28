@@ -2,73 +2,88 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
-.topnav {
-    overflow: hidden;
-    background-color: #333;
+
+/*Navbar*/
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin: 0;
 }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
+
+.nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #111;
+}
+
+/*Pesquisa de Receitas*/
 
 .pesquisa {
-    width: 100%;
-    height: 480px;
-    margin: 0;
-    background-image: url("Imagens/pexels-klaus-nielsen-6287225\ \(1\).jpg");
-    background-repeat: no-repeat;
-    text-align: center;
+  background-image: url("Imagens/Pesquisar-fundo.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 520px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/*Pesquisa de Receitas -> Barra de pesquisa*/
+
+.pesquisa-conteudo {
+  margin: 0;
+  position: relative;
+}
+
+.pesquisa-searchbar {
+  width: 300px;
+  font-size: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  padding: 20px;
+  transition: all .7s;
+  transition-delay: .1s;
+}
+
+.pesquisa-searchbar:hover {
+  width: 350px;
+  height: 25px;
+}
+
+/*Corpo do Conteudo*/
 
 .conteudo {
-    margin: 0px 80px;
-    background-color: #04AA6D;
+  margin: 0 60px;
 }
 
+/*Prato do dia*/
 
-.topnav .search-container {
-    float: right;
-  }
-  
-  .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-  
-  .topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .topnav .search-container button:hover {
-    background: #ccc;
-  }
+.conteudo-dia {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.conteudo-dia .dia-divisao {
+  width: 50%;
+}
+
+.dia-divisao img {
+  width: 90%;
+  height: auto;
+}
