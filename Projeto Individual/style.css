@@ -6,27 +6,39 @@ body {
 /*Navbar*/
 
 .nav {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #f0f0f0;
   margin: 0;
+  display: flex;
+  width: 100%;
+  background: #eee;
 }
 
 .nav-img {
-  height: 80%;
-  float: left;
+  height: 100px;
+  padding: 0 50px;
 }
 
-.nav a {
-  float: left;
+.nav .nav-sep {
   display: block;
   color: rgb(64, 64, 64);
-  text-align: center;
-  padding: 14px 16px;
+  padding: 2% 5%;
   text-decoration: none;
-  font-size: large;
+  font-size: 110%;
+  text-align: center;
+  align-items: center;
+}
+
+.nav .nav-social {
+  display: block;
+  color: rgb(64, 64, 64);
+  padding: 0 5%;
+  text-decoration: none;
+  font-size: 110%;
+  text-align: center;
+  align-items: center;
 }
 
 .nav a:hover {
@@ -76,7 +88,7 @@ body {
 /*Corpo do Conteudo*/
 
 .conteudo {
-  margin: 0 15%;
+  margin: 0 10%;
 }
 
 /*Receita do dia*/
@@ -84,6 +96,8 @@ body {
 .conteudo-dia {
   display: flex;
   flex-flow: row wrap;
+  background-color: rgba(209, 238, 248, 0.815);
+  border-radius: 40px;
 }
 
 .conteudo-dia .dia-divisao {
@@ -92,11 +106,13 @@ body {
 
 .conteudo-dia .dia-divisao img {
   width: 95%;
-  border-radius: 5px 5px 5px 5px;
+  height: 100%;
+  border-radius: 40px 0 0 40px;
 }
 
 .conteudo-dia .divisao-titulo {
-  margin: 0;
+  margin: 20px 0;
+  font-size: 70px;
 }
 
 /*Estrelas*/
@@ -167,6 +183,7 @@ body {
 
 .categoria-card img {
   border-radius: 5px 5px 0 0;
+  width:100%;
 }
 
 .categoria-card .container {
@@ -178,3 +195,65 @@ body {
 }
 
 /*Footer*/
+
+footer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px;
+}
+.footer-content h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+
+  border-radius: 50%;
+
+}
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+
+
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
