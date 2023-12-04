@@ -10,21 +10,27 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #f0f0f0;
   margin: 0;
 }
 
+.nav-img {
+  height: 80%;
+  float: left;
+}
+
 .nav a {
-  float: right;
+  float: left;
   display: block;
-  color: white;
+  color: rgb(64, 64, 64);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: large;
 }
 
 .nav a:hover {
-  background-color: #111;
+  background-color: #b0b0b0;
 }
 
 /*Pesquisa de Receitas*/
@@ -34,6 +40,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 520px;
+  box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2);
 
   align-items: center;
   display: flex;
@@ -69,10 +76,10 @@ body {
 /*Corpo do Conteudo*/
 
 .conteudo {
-  margin: 0 250px;
+  margin: 0 15%;
 }
 
-/*Prato do dia*/
+/*Receita do dia*/
 
 .conteudo-dia {
   display: flex;
@@ -83,10 +90,13 @@ body {
   width: 50%;
 }
 
-.dia-divisao img {
+.conteudo-dia .dia-divisao img {
   width: 95%;
-  height: auto;
-  border: 4px solid rgba(85, 85, 85, 0.296);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.conteudo-dia .divisao-titulo {
+  margin: 0;
 }
 
 /*Estrelas*/
@@ -95,5 +105,76 @@ body {
   color:rgb(255, 191, 0)
 }
 
-/*Footer*/
+.divisao-estrelas {
+  font-size: 15px;
+}
 
+/*Botões*/
+
+/*Botões -> Ver Mais*/
+
+.dia-divisao .divisao-button-mais {
+  height: 35px;
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 80px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12.5px;
+  font-weight: 550;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+}
+
+.dia-divisao .divisao-button-mais:hover { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.dia-divisao .divisao-button-mais:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+/*Cards das Categorias*/
+
+.categoria-grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.categoria-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.categoria-card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+  width: 101%;
+  height: 100%;
+}
+
+.categoria-card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.categoria-card .container {
+  padding: 2px 16px;
+}
+
+.card-button {
+  margin-bottom: 15px;
+}
+
+/*Footer*/
