@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
 }
 
 /*Navbar*/
@@ -110,22 +110,41 @@ body {
   border-radius: 40px 0 0 40px;
 }
 
+.dia-divisao .coracao {
+  color: red;
+}
+
 .conteudo-dia .divisao-titulo {
-  margin: 20px 0;
-  font-size: 70px;
+  margin: 10px 0px;
+  font-size: 50px;
 }
 
-/*Estrelas*/
-
-.prato-dia-estrelas {
-  color:rgb(255, 191, 0)
-}
-
-.divisao-estrelas {
-  font-size: 15px;
+.conteudo-dia .divisao-descricao {
+  margin-top: 30px;
 }
 
 /*Botões*/
+
+/*Botões -> Informações*/
+
+.divisao-informacoes .button-relogio,.button-doses,.button-dificuldade {
+  height: 30px;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.427);
+  border: 0;
+  border-radius: 80px;
+  box-sizing: border-box;
+  color: #000000b6;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 550;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+}
 
 /*Botões -> Ver Mais*/
 
@@ -146,6 +165,7 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .dia-divisao .divisao-button-mais:hover { 
@@ -193,6 +213,10 @@ body {
 .card-button {
   margin-bottom: 15px;
 }
+
+/*Email*/
+
+
 
 /*Footer*/
 
