@@ -12,6 +12,7 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   background: #eee;
 }
@@ -21,24 +22,22 @@ body {
   padding: 0 50px;
 }
 
-.nav .nav-sep {
-  display: block;
-  color: rgb(64, 64, 64);
-  padding: 2% 5%;
-  text-decoration: none;
-  font-size: 110%;
+.nav-center{
   text-align: center;
-  align-items: center;
 }
 
-.nav .nav-social {
-  display: block;
+.nav-center .nav-sep {
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+  font-size: 110%;
+  margin-right: 100px;
+}
+
+.nav-left .nav-social {
   color: rgb(64, 64, 64);
   padding: 0 5%;
   text-decoration: none;
   font-size: 110%;
-  text-align: center;
-  align-items: center;
 }
 
 .nav a:hover {
@@ -136,7 +135,7 @@ body {
   box-sizing: border-box;
   color: #000000b6;
   display: inline-flex;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 550;
   justify-content: center;
   overflow: hidden;
@@ -157,7 +156,7 @@ body {
   box-sizing: border-box;
   color: #ffffff;
   display: inline-flex;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 550;
   justify-content: center;
   overflow: hidden;
@@ -216,7 +215,11 @@ body {
 
 /*Email*/
 
-
+.email {
+  text-align: center;
+  background-color: rgba(209, 238, 248, 0.815);
+  border-radius: 40px;
+}
 
 /*Footer*/
 
