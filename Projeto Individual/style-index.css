@@ -1,8 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+/*Fontes*/
+
+  /*Navbar*/ @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+  /*Descrições*/ @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+  /*Titulo - Secções*/ @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+  /*Titulo - Receita*/ 
+
+/*Css*/
 
 body {
-    margin: 0;
-    font-family:sans-serif;
+  margin: 0;
+  font-family:sans-serif;
+}
+
+.titulos-seccoes {
+  font-family: 'Kalam', sans-serif;
+  font-size: 180%;
 }
 
 /*Navbar*/
@@ -21,10 +36,6 @@ header li, a {
   font-size: 15px;
   color: #24252A;
   text-decoration: none;
-}
-
-.nav-logo {
-  cursor: pointer;
 }
 
 .nav-links {
@@ -124,17 +135,16 @@ header li, a {
   border-radius: 40px 0 0 40px;
 }
 
-.dia-divisao .coracao {
-  color: red;
-}
-
 .conteudo-dia .divisao-titulo {
   margin: 10px 0px;
   font-size: 50px;
 }
 
 .conteudo-dia .divisao-descricao {
-  margin-top: 30px;
+  margin-top: 2%;
+  font-family: 'Karla', sans-serif;
+  padding-right: 6%;
+  font-size: 0.8vw;
 }
 
 /*Botões*/
@@ -180,6 +190,7 @@ header li, a {
   padding-right: 12px;
   text-align: center;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .dia-divisao .divisao-button-mais:hover { 
@@ -189,6 +200,45 @@ header li, a {
 
 .dia-divisao .divisao-button-mais:active {
   background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+/*Categorias*/
+
+.categorias-componentes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categorias-componentes-button {
+  height: 35px;
+  align-items: center;
+  background-color: #2d2d2d;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 550;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 18%;
+}
+
+.categorias-componentes-button:hover { 
+  background-color: #494949;
+  color: #ffffff;
+}
+
+.categorias-componentes-button:active {
+  background: #5a5a5a;
   color: rgb(255, 255, 255, .7);
 }
 
@@ -224,8 +274,40 @@ header li, a {
   padding: 2px 16px;
 }
 
+.categoria-card .container p {
+  font-family: 'Karla', sans-serif;
+  max-width: 100%;
+}
+
 .card-button {
-  margin-bottom: 15px;
+  height: 35px;
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 80px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 550;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card-button:hover { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.card-button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
 }
 
 /*Email*/
@@ -234,68 +316,146 @@ header li, a {
   text-align: center;
   background-color: rgba(209, 238, 248, 0.815);
   border-radius: 40px;
+  margin: 5% 0 5% 0;
+}
+
+.email .email-titulo {
+  padding-top: 1%;
+}
+
+.email .email-texto {
+  margin-bottom: 2%;
+}
+
+
+.email .submeter-email {
+  width: 300px;
+  font-size: 15px;
+  height: 6px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all .7s;
+  transition-delay: .1s;
+  margin-bottom: 2%;
+}
+
+.email .card-button {
+  height: 47px;
+  align-items: center;
+  background-color: #2d2d2d;
+  border: 0;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 550;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.email .card-button:hover { 
+  background-color: #494949;
+  color: #ffffff;
+}
+
+.email .card-button:active {
+  background: #5a5a5a;
+  color: rgb(255, 255, 255, .7);
 }
 
 /*Footer*/
 
-footer{
+footer {
   bottom: 0;
   left: 0;
   right: 0;
   background: #111;
   height: auto;
-  width: 100%;
   color: #fff;
 }
+
 .footer-content{
   display: flex;
+  align-content: center;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 0px;
+  margin: 0 5vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.footer-content h3{
+
+.footer-content .footer-left {
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-content-img {
+  width: 15vw;
+}
+
+.footer-content .footer-center {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1vw;
+  margin-left: 4.5vw;
+}
+
+.footer-content .footer-center .footer-center-title {
   font-size: 2.1rem;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+  margin-bottom: 2vw;
 }
-.footer-content p{
+
+.footer-content .footer-center .footer-center-description {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
   color: #cacdd2;
 }
-.socials{
+
+.footer-content .footer-right {
+  justify-content: center;
+  text-align: center;
+  margin-right: 4.5vw;
+}
+
+.footer-content .footer-right .socials{
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 1rem 0;
+  padding: 0;
 }
-.socials li{
+
+.footer-content .footer-right .socials li{
   margin: 0 10px;
 }
-.socials a{
+
+.footer-content .footer-right .socials a{
   text-decoration: none;
-  color: #fff;
-  border: 1.1px solid white;
-  padding: 5px;
-
-  border-radius: 50%;
-
+  color: azure;
+  padding: 10px;
 }
-.socials a i{
-  font-size: 1.1rem;
-  width: 20px;
 
-
+.footer-content .footer-right .socials a i{
+  font-size: 1.5rem;
+  width: 25px;
   transition: color .4s ease;
-
-}
-.socials a:hover i{
-  color: aqua;
 }
 
+.footer-content .footer-right .socials a:hover i{
+  color: rgb(162, 173, 173);
+}
